@@ -35,7 +35,7 @@ const BookingNewPage = () => {
    const [selectedService, setSelectedService] = useState("");
    const [showDeleteService, setShowDeleteService] = useState(false);   
    const [ serviceGroupList, setServiceGroupList ] = useState([]);
-   const [ serviceGroups, setServiceGroups ] = useState([]);
+   const [ serviceGroups, setServiceGroups ] = useState<any[]>([]);
    const [ services, setServices ] = useState([]);
    const [ serviceActive, setServiceActive ] = useState('');
    const [ bookingList, setBookingList ] = useState([]);
@@ -329,7 +329,6 @@ const BookingNewPage = () => {
                 as="select"
                 value={selectedService}
                 onChange={onChangeServiceGroup}
-                placeholder=""
                 autoFocus
               >               
               <option value="">--Please Choose Service --</option>

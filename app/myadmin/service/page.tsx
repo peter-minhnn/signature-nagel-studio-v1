@@ -21,14 +21,14 @@ const LoginPage = () => {
         setIsShowPassword(!isShowPassword);        
     }
 
-    const handleSignIn = async (values: LoginRequest) => {
-        const response = await authenticate({ username: values.username, password: values.password });
-        if (response.code === 'success') {
-            setItem(response.data.data.token);
-            router.push('/user');
-        }
-        console.log(response)
-    }
+   //  const handleSignIn = async (values: LoginRequest) => {
+   //      const response = await authenticate({ username: values.username, password: values.password });
+   //      if (response.code === 'success') {
+   //          setItem(response.data.data.token);
+   //          router.push('/user');
+   //      }
+   //      console.log(response)
+   //  }
 
     return (
         <div className="page-content">

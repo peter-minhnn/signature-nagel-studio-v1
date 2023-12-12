@@ -1,12 +1,13 @@
 {
   "name": "signature-nagel-studio",
   "version": "0.1.0",
+  "private": true,
   "workspaces": [
-      "app/*"
-],
+    "app/*"
+  ],
   "scripts": {
     "dev": "cross-env NEXT_PUBLIC_ENV=dev next dev",
-    "build": "next build",
+    "build": "cross-env NEXT_PUBLIC_ENV=production next build",
     "start": "next start",
     "lint": "next lint"
   },
