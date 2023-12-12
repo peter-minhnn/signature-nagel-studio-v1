@@ -15,14 +15,14 @@ const nextConfig = {
             bodySizeLimit: '2mb',
         },
     },
-    async rewrites() {
-        return [
-            {
-                source: '/api/:path*',
-                destination: `${CONFIG.NEXT_PUBLIC_API_URL_BASE}/api/:path*`,
-            }
-        ];
-    }
+    // async rewrites() {
+    //     return [
+    //         {
+    //             source: '/api/:path*',
+    //             destination: `${CONFIG.NEXT_PUBLIC_API_URL_BASE}/api/:path*`,
+    //         }
+    //     ];
+    // }
 }
 
 module.exports = nextConfig
